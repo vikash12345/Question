@@ -2,11 +2,14 @@
 // This is a template for a PHP scraper on morph.io (https://morph.io)
 // including some code snippets below that you should find helpful
 
-// require 'scraperwiki.php';
-// require 'scraperwiki/simple_html_dom.php';
-//
-// // Read in a page
-// $html = scraperwiki::scrape("http://foo.com");
+ require 'scraperwiki.php';
+ require 'scraperwiki/simple_html_dom.php';
+//require 		'simple_html_dom.php';
+$BaseLink	=	'https://www.glassdoor.com/Interview/us-associate-interview-questions-SRCH_IL.0,2_IN1_KO3,12_IP';
+	$SiteURL	=	'https://www.glassdoor.com/Interview/us-associate-interview-questions-SRCH_IL.0,2_IN1_KO3,12_IP1.htm';
+		
+	$Pagination = 	file_get_html($SiteURL);
+	echo $pagination;
 //
 // // Find something on the page using css selectors
 // $dom = new simple_html_dom();
